@@ -11,9 +11,16 @@
     "api": "yarn json-server api.json -d 1000 -w"
   },
   "dependencies": {
+    "@react-native-community/masked-view": "^0.1.10",
+    "@react-navigation/native": "^5.7.6",
     "react": "16.9.0",
     "react-native": "0.61.5",
     "react-native-gesture-handler": "^1.8.0",
+    "react-native-reanimated": "^1.13.1",
+    "react-native-safe-area-context": "^3.1.8",
+    "react-native-screens": "^2.11.0",
+    "react-navigation": "^4.4.2",
+    "react-navigation-stack": "^2.8.4",
     "styled-components": "^5.2.0"
   },
   "devDependencies": {
