@@ -1,18 +1,22 @@
 import React, {useState, useEffect} from 'react';
 import {View, FlatList} from 'react-native';
 
-import {Post, Header, Avatar, Name, PostImage, Description} from './styles';
+import {Post, Header, Avatar, Name, PostImage, Description, Loading} from './styles';
 
 const Feed = () => {
   const [feed, setFeed] = useState([]);
   const [page, setPage] = useState(1);
   const [total, setTotal] = useState(0);
+  const [loading, setLoading] = useState(false);
+  const [refreshing, setRefreshing] = useState(false);
 
-  async function loadPage(pageNumber = page) {
+  async function loadPage(pageNumber = page, shouldRefresh = false) {
     const limitItems = 5;
 
     if (total && pageNumber > total) return;
-    console.log(pageNumber);
+
+    setLoading(true);
+
     const response = await fetch(
       `http://localhost:3000/feed?_expand=author&_limit=${limitItems}&_page=${pageNumber}`,
     );
@@ -21,13 +25,22 @@ const Feed = () => {
     const totalItems = response.headers.get('x-Total-Count');
 
     setTotal(Math.floor(totalItems / limitItems));
-    setFeed([...feed, ...data]);
+    setFeed(shouldRefresh ? data : [...feed, ...data]);
     setPage(pageNumber + 1);
+    setLoading(false);
   }
 
   useEffect(() => {
     loadPage();
   }, []);
+
+  async function refreshList() {
+    setRefreshing(true);
+
+    await loadPage(1, true);
+
+    setRefreshing(false);
+  }
 
   return (
     <View>
@@ -36,6 +49,9 @@ const Feed = () => {
         keyExtractor={(post) => String(post.id)}
         onEndReached={() => loadPage()}
         onEndReachedThreshold={0.1}
+        onRefresh={refreshList}
+        refreshing={refreshing}
+        ListFooterComponent={loading && <Loading />}
         renderItem={({item}) => (
           <Post>
             <Header>
