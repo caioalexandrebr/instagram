@@ -3,10 +3,20 @@ import {View, Image, TouchableOpacity, FlatList} from 'react-native';
 import {getBottomSpace} from 'react-native-iphone-x-helper';
 
 import LazyImage from '../../components/LazyImage';
-import {Post, Header, Avatar, Name, Icon, Description, Loading} from './styles';
+import {
+  Post,
+  Header,
+  Info,
+  Avatar,
+  Name,
+  TouchIcons,
+  Description,
+  Loading,
+} from './styles';
 
 import comment from './../../assets/comment.png';
 import like from './../../assets/like.png';
+import options from './../../assets/options.png';
 import save from './../../assets/save.png';
 import send from './../../assets/send.png';
 
@@ -72,8 +82,11 @@ const Feed = () => {
         renderItem={({item}) => (
           <Post>
             <Header>
-              <Avatar source={{uri: item.author.avatar}} />
-              <Name>{item.author.name}</Name>
+              <Info>
+                <Avatar source={{uri: item.author.avatar}} />
+                <Name>{item.author.name}</Name>
+              </Info>
+              <Image source={options} />
             </Header>
             <LazyImage
               shouldLoad={viewable.includes(item.id)}
@@ -81,13 +94,7 @@ const Feed = () => {
               source={{uri: item.image}}
               aspectRatio={item.aspectRatio}
             />
-            <View
-              style={{
-                justifyContent: 'space-between',
-                flexDirection: 'row',
-                paddingHorizontal: 15,
-                paddingTop: 15,
-              }}>
+            <TouchIcons>
               <View style={{flexDirection: 'row'}}>
                 <TouchableOpacity style={{marginRight: 15}}>
                   <Image source={like} />
@@ -102,7 +109,7 @@ const Feed = () => {
               <TouchableOpacity>
                 <Image source={save} />
               </TouchableOpacity>
-            </View>
+            </TouchIcons>
             <Description>
               <Name>{item.author.name}</Name> {item.description}
             </Description>
