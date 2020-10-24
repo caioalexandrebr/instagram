@@ -1,5 +1,6 @@
 import React, {useState, useEffect, useCallback} from 'react';
 import {View, FlatList} from 'react-native';
+import {getBottomSpace} from 'react-native-iphone-x-helper';
 
 import LazyImage from '../../components/LazyImage';
 import {Post, Header, Avatar, Name, Description, Loading} from './styles';
@@ -53,6 +54,7 @@ const Feed = () => {
   return (
     <View>
       <FlatList
+        contentContainerStyle={{paddingBottom: getBottomSpace()}}
         data={feed}
         keyExtractor={(post) => String(post.id)}
         onEndReached={() => loadPage()}
