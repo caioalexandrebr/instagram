@@ -22,6 +22,11 @@ export const Name = styled.Text`
   font-weight: bold;
 `;
 
+export const Icon = styled.Image`
+  margin-top: 15px;
+  margin-left: 15px;
+`;
+
 export const Description = styled.Text`
   line-height: 18px;
   padding: 15px;

@@ -1,9 +1,14 @@
 import React, {useState, useEffect, useCallback} from 'react';
-import {View, FlatList} from 'react-native';
+import {View, Image, TouchableOpacity, FlatList} from 'react-native';
 import {getBottomSpace} from 'react-native-iphone-x-helper';
 
 import LazyImage from '../../components/LazyImage';
-import {Post, Header, Avatar, Name, Description, Loading} from './styles';
+import {Post, Header, Avatar, Name, Icon, Description, Loading} from './styles';
+
+import comment from './../../assets/comment.png';
+import like from './../../assets/like.png';
+import save from './../../assets/save.png';
+import send from './../../assets/send.png';
 
 const Feed = () => {
   const [feed, setFeed] = useState([]);
@@ -76,6 +81,28 @@ const Feed = () => {
               source={{uri: item.image}}
               aspectRatio={item.aspectRatio}
             />
+            <View
+              style={{
+                justifyContent: 'space-between',
+                flexDirection: 'row',
+                paddingHorizontal: 15,
+                paddingTop: 15,
+              }}>
+              <View style={{flexDirection: 'row'}}>
+                <TouchableOpacity style={{marginRight: 15}}>
+                  <Image source={like} />
+                </TouchableOpacity>
+                <TouchableOpacity style={{marginRight: 15}}>
+                  <Image source={comment} />
+                </TouchableOpacity>
+                <TouchableOpacity style={{marginRight: 15}}>
+                  <Image source={send} />
+                </TouchableOpacity>
+              </View>
+              <TouchableOpacity>
+                <Image source={save} />
+              </TouchableOpacity>
+            </View>
             <Description>
               <Name>{item.author.name}</Name> {item.description}
             </Description>
