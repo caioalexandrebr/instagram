@@ -5,7 +5,7 @@
       "image": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/instagram-clone/1.jpeg",
       "small": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/instagram-clone/small/1.jpeg",
       "aspectRatio": 0.834,
-      "description": "Working hard at Rocketseat!",
+      "description": "Studying hard or react-native!",
       "authorId": 1
     },
     {
@@ -21,7 +21,7 @@
       "image": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/instagram-clone/3.jpeg",
       "small": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/instagram-clone/small/3.jpeg",
       "aspectRatio": 0.834,
-      "description": "Rocketships fly away!",
+      "description": "Sode and coffee, and that's enough.",
       "authorId": 3
     },
     {
@@ -29,7 +29,7 @@
       "image": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/instagram-clone/4.jpeg",
       "small": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/instagram-clone/small/4.jpeg",
       "aspectRatio": 0.834,
-      "description": "3, 2, 1, ready to launch!",
+      "description": "We go beyond expectations!",
       "authorId": 4
     },
     {
@@ -53,7 +53,7 @@
       "image": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/instagram-clone/7.jpeg",
       "small": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/instagram-clone/small/7.jpeg",
       "aspectRatio": 0.834,
-      "description": "OmniStack to the rescue!",
+      "description": "We go beyond expectations!",
       "authorId": 1
     },
     {
@@ -61,7 +61,7 @@
       "image": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/instagram-clone/8.jpeg",
       "small": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/instagram-clone/small/8.jpeg",
       "aspectRatio": 0.834,
-      "description": "Rocketseat is cool!",
+      "description": "Studying hard or react-native!",
       "authorId": 2
     },
     {
@@ -69,7 +69,7 @@
       "image": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/instagram-clone/9.jpeg",
       "small": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/instagram-clone/small/9.jpeg",
       "aspectRatio": 0.834,
-      "description": "Have you watched our videos at YouTube?",
+      "description": "Sode and coffee, and that's enough.",
       "authorId": 4
     },
     {
@@ -101,7 +101,7 @@
       "image": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/instagram-clone/4.jpeg",
       "small": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/instagram-clone/small/4.jpeg",
       "aspectRatio": 0.834,
-      "description": "Sleep, eat, code, repeat!",
+      "description": "Sode and coffee, and that's enough.",
       "authorId": 2
     },
     {
@@ -109,7 +109,7 @@
       "image": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/instagram-clone/5.jpeg",
       "small": "https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/instagram-clone/small/5.jpeg",
       "aspectRatio": 0.834,
-      "description": "Working hard at Rocketseat!",
+      "description": "Studying hard or react-native!",
       "authorId": 4
     },
     {
@@ -164,28 +164,23 @@
   "authors": [
     {
       "id": 1,
-      "name": "dieegosf",
-      "avatar": "https://avatars0.githubusercontent.com/u/2254731?s=50&v=4"
+      "name": "caioalexandrebr",
+      "avatar": "https://avatars3.githubusercontent.com/u/31045534?s=50&u=f78b78b5e5342b03001f26b55f4b3ca63239e5e2&v=4"
     },
     {
       "id": 2,
-      "name": "cleitonsouza",
-      "avatar": "https://avatars0.githubusercontent.com/u/4669899?s=50&v=4"
+      "name": "matheushenrique",
+      "avatar": "https://avatars0.githubusercontent.com/u/32910717?s=50&u=38fe37e755541895415aa287ec4cbd637c5afd0e&v=4"
     },
     {
       "id": 3,
-      "name": "pellizzetti",
-      "avatar": "https://avatars2.githubusercontent.com/u/16545335?s=50&v=4"
+      "name": "ruanramalho",
+      "avatar": "https://avatars1.githubusercontent.com/u/58890915?s=50&u=60c33d3b5ec0c11b085586ba0d3b18d5afc95869&v=4"
     },
     {
       "id": 4,
-      "name": "jpdemagalhaes",
-      "avatar": "https://avatars3.githubusercontent.com/u/7268910?s=50&v=4"
-    },
-    {
-      "id": 5,
-      "name": "jpedroschmitz",
-      "avatar": "https://avatars0.githubusercontent.com/u/26466516?s=50&v=4"
+      "name": "dariofelipe",
+      "avatar": "https://avatars0.githubusercontent.com/u/59899974?s=50&u=946d64f7aac9a08a87cf2d5c74ace89ce0250ade&v=4"
     }
   ]
 }
