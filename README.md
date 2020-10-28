@@ -10,10 +10,7 @@
 
 # Instagram - React Native
 
-![](https://img.shields.io/github/package-json/v/caioalexandrebr/instagram.svg)
-![](https://img.shields.io/github/last-commit/caioalexandrebr/instagram.svg?color=red)
-![](https://img.shields.io/github/languages/code-size/caioalexandrebr/instagram.svg)
-![](https://img.shields.io/github/repo-size/osvaldokalvaitir/caioalexandrebr/instagram.svg?color=blueviolet)
+![](https://img.shields.io/github/languages/top/caioalexandrebr/instagram?style=flat-square)
 
 ### 1 - Installing dependencies
 
